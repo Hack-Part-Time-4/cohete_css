@@ -1,0 +1,89 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+}
+
+.superior_cohete {
+    background-color: brown;
+    height: 60px;
+    width: 80px;
+    animation: superior_coh
+}
+
+.superior_tri {
+    background-color: white;
+    rotate: 55deg;
+    height: 40px;
+    position: relative;
+    right: -33px;
+    top: -4px;
+}
+
+.superior_tri-2 {
+    background-color: white;
+    rotate: -55deg;
+    height: 40px;
+    position: relative;
+    right: 33px;
+    top: -44px;
+    position: relative;
+}
+
+.cuerpo_cohete {
+    background-color: green;
+    height: 100px;
+    width: 80px;
+}
+
+.cuerpo_ventanas {
+    width: 100%;
+}
+
+.ventanas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.cuerpo_cohete li {
+    background-color: black;
+    height: 10px;
+    width: 10px;
+    margin: 7px;
+
+    list-style: none;
+}
+
+.motor_cohete {
+    background-color: blue;
+    height: 70px;
+    width: 80px;
+}
+
+.container_cohete {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+    animation: cohete 15s 1s;
+    height: 100%;
+    width: 100%;
+}
+
+@keyframes cohete {
+    0% {bottom: 10px;}
+    50% {bottom: 600px;}
+}
+
+@keyframes superior_cohete {
+    90% {background-color: white;}
+    100% {background-color: white;}
+
+}
